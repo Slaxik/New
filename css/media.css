@@ -1,0 +1,137 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.product>span>p{
+	font-size:0.9em;
+}
+#change_size>div>input{
+	width: 2em;
+}
+#info-block>p{
+width: 70%;
+}
+#info-block>h5{
+	width:40%;
+}
+#sort>select{
+	width:55%;
+}
+#count>p{
+	width:90%;
+}
+#sort>select{
+	width:35%;
+}
+.options>div>b{
+	font-size:0.6em;
+	padding-bottom: 0.6em;
+}
+.options>div.buy{
+	margin-top:1.1em;
+	padding-bottom: 1.3em;
+	font-size:1em;
+}
+#footer>div>div>div>a{
+	font-size:1.1em;
+}
+#footer_menu>div>a.footer_menu{
+	font-size:1.1em;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.phone_number{
+	margin-top: 1.2em;
+}
+
+.product{
+		width:47%;
+	}
+	.options>div{
+		padding-bottom: 2.2em;
+	background-color: #222E46;
+	color:#fff;
+width:50%;
+}
+.options>div>b{
+position: relative;
+	top:1.7em;
+	left:3.7em;
+	font-size: 0.9em;
+}
+.options>div.buy{
+	padding-bottom: 1.9em;
+}
+#footer_menu>div>a.footer_menu{
+	margin-top: 1.3em;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+#mobile_variables>div>select{
+		width:100%;
+		font-size:0.8em;
+	}	
+.options>div>b{
+position: relative;
+	top:1.7em;
+	left:1em;
+	font-size: 0.9em;
+}
+
+	}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#menu_for_mobile>div>div>a{
+		font-size: 0.8em;
+	}
+#mobile_variables>div>select{
+		width:100%;
+		font-size:0.61em;
+	}
+	
+	}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+#contacts>p{
+	margin:0.4em;
+}
+.brand{
+	width:90%;
+}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
