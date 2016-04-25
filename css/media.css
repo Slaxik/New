@@ -5,6 +5,12 @@
 .product>span>p{
 	font-size:0.9em;
 }
+#feedback{
+	font-size: 0.9em;
+}
+#sms{
+	font-size:0.9em;
+}
 #change_size>div>input{
 	width: 2em;
 }
@@ -38,10 +44,20 @@ width: 70%;
 #footer_menu>div>a.footer_menu{
 	font-size:1.1em;
 }
+#footer_menu>div>a.footer_menu{
+	margin-top: 1.3em;
+}
+.san_menu>div>div{
+	width:100%;
+}
+.san_menu>div>div>div>ul>li>a{
+	width:100%;
+}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	
 .phone_number{
 	margin-top: 1.2em;
 }
@@ -64,9 +80,7 @@ position: relative;
 .options>div.buy{
 	padding-bottom: 1.9em;
 }
-#footer_menu>div>a.footer_menu{
-	margin-top: 1.3em;
-}
+
 }
 
 /* Small Devices, Tablets */

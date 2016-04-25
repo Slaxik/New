@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Santeh</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/articmodal/arcticmodal.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<!--[if lt IE 9]>
@@ -42,11 +43,11 @@
 		<div class="col-lg-3 col-md-3 feedback  hidden-sm hidden-xs">
 			
 				<div class="col-lg-6 col-md-6">
-				<a id="feedback" href="#form_block">Заказать Звонок</a>
+				<a id="feedback" href="#modal_window">Заказать Звонок</a>
 				</div>
 				<div class="col-lg-6 col-md-6"><a href="#" id="sms">Написать нам</a></div>
 			
-				<div class="col-lg-12 col-md-12">
+				<div class="col-lg-12 col-md-12 search">
 					<form action="" method="POST">
 						<input type="text" id="search_lg" name="search" placeholder=" Поиск..."><img src="img/search.png" alt="Поиск" id="search_btn">
 					</form>
@@ -72,11 +73,12 @@
 	<div class="row">
 		<div class="col-sm-12 col-xs-12" id="menu_for_mobile">
 		<div class="row">
-		<div class="col-sm-3 col-xs-3"><a href="#"><img src="img/menu/catalog.png" alt="Каталог"><br><span>Каталог</span></a></div>
-			<div class="col-sm-2 col-xs-2"><a href="#"><img src="img/menu/search.png" alt="Поиск"><br><span>Поиск</span></a></div>
-		<div class="col-sm-2 col-xs-2"><a href="#"><img class="views"src="img/menu/views.png" alt="Просмотренные"><br><span>Вы смотрели</span></a></div>
-			<div class="col-sm-2 col-xs-2"><a href="#"><img src="img/menu/cart.png" alt="Корзина"><br><span>Корзина</span></a></div>
-			<div class="col-sm-3 col-xs-3"><a href="#"><img src="img/menu/menu.png" alt="Меню"><br><span>Меню</span></a></div>
+<div class="menu_block"><a href="#" id="catalog_menu"><img src="img/menu/catalog.png" alt="Каталог"><br><span>Каталог</span></a></div>
+<div class="menu_block"><a href="#" id="search"><img src="img/menu/search.png" alt="Поиск"><br><span>Поиск</span></a></div>
+<b class="count_views">3</b>
+<div class="menu_block"><a href="#"><img class="views" src="img/menu/views.png" alt="Просмотренные"><br><span>Вы смотрели</span></a></div><b class="count_cart">20</b>
+<div class="menu_block"><a href="#"><img src="img/menu/cart.png" alt="Корзина"><br><span>Корзина</span></a></div>
+<div class="menu_block"><a href="#" class="mobileMenu"><img src="img/menu/menu.png" alt="Меню"><br><span>Меню</span></a></div>
 		</div>
 			
 		</div>
@@ -85,150 +87,23 @@
 
 <!--End Mobile Menu-->
 
+
 <!--Content-->
 <div class="container">
 	<div class="row">
-	<!--Left sidebar-->
-		<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-			<!--Left Drop Menu-->
-			<aside id="left_menu">
-				<p class="catalog">Каталог сантехники<img src="img/menu.png" alt="Menu" class="img-responsive"></p>
-				<ul>
-					<li><a href="#">Душевые кабины<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Душевые ограждения<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Мебель для ванной<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Ванны<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Санфаянс<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Смесители<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Инсталляции<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Полотенцесушители<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Аксессуары<img src="img/tab_menu.png" alt="TabForMenu" ></a></li>
-					<li><a href="#">Мойки<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Бассейны<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-					<li><a href="#">Бренды<img src="img/tab_menu.png" alt="TabForMenu"></a></li>
-				</ul>
-			</aside>
-			<!--End Left Drop Menu-->
-
-			<!--Menu Categories-->
-
-			<aside id="categories">
-<p>Категории</p>
-<ul>
-	<li><a href="#"><img src="img/input_off.png" alt="">Кабины без пара</a></li>
-	<li><a href="#"><img src="img/input_off.png" alt="">Кабины с паром</a></li>
-	<li><a href="#"><img src="img/input_off.png" alt="">Душевые боксы</a></li>
-	<li><a href="#"><img src="img/input_off.png" alt="">Кабины с ванной</a></li>
-	<li><a href="#"><img src="img/input_off.png" alt="">Кабины с сауной</a></li>
-	<li><a href="#"><img src="img/input_off.png" alt="">Смотреть все</a></li>
-</ul>
-					
-			</aside>
-
-			<!--End Menu Categories-->
-			<!--Brand Left Sidebar-->
-			<aside id="brand_sidebar">
-				<p>Бренды</p>
-				<ul>
-					<li><a href="#"><img src="img/input_off.png" alt="">Am.Pm <span>(Германия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Aquanet <span>(Россия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Balteco <span>(Эстония)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">BandHours <span>(Германия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Cezares <span>(Италия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Doctor Jet <span>(Россия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Eago <span>(Китай)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Edelform <span>(Россия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Erlit <span>(Китай)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Ido <span>(Финляндия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Jacuzzi <span>(Италия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Lagard <span>(Германия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Migliore <span>(Италия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Teuco <span>(Италия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Timo <span>(Финляндия)</span></a></li>
-					<li><a href="#"><img src="img/input_off.png" alt="">Wasserfalle <span>(Германия)</span></a></li>
-				</ul>
-
-			</aside>
-
-			<!--End Brand Left Sidebar-->
-
-			<!--Extended Filter-->
-			<aside id="extended_filter">
-				<span>Расширенный фильтр<img src="img/minus.png" alt="Minus"></span>
-				<p>Цена</p>
-				<label for="from">От</label>
-				<input type="text" name="from" placeholder="0">
-				<label for="to">До</label>
-				<input type="text" name="to" placeholder="1861500">
-				<div></div>
-			</aside>
-
-			<!--End Extended Filter-->
-			<!--Width, Height, Depth-->
-			<aside>
-			<div class="row" id="change_size">
-	<!--Title for size-->
-			<div class="col-lg-12 col-md-12">
-	<p>Габариты в сантиметрах</p>
-	</div>
-	<!--End Title for size-->
-	<!--Width-->
-			<div class="col-lg-12 col-md-12">
-					<p class="width_height_depth">Ширина:</p> 
-			<img src="img/width.png" alt="Ширина">
-					<label for="from_width">от</label>
-						<input type="text" name="from_width">
-					<label for="to_width">до</label>
-						<input type="text" name="to_width">
-				</div>
-	<!--End Width-->
-	<!--Depth-->
-				<div class="col-lg-12 col-md-12">
-					<p class="width_height_depth">Глубина:</p>
-								
-				 <img src="img/depth.png" alt="Глубина">
-					 <label for="from_depth" class="width_left">от</label>
-						<input type="text" name="from_depth">
-					 <label for="to_depth">до</label>
-					 	<input type="text" name="to_depth">
-				</div>
-	<!--End Depth-->
-	<!--Height-->
-			<div class="col-lg-12 col-md-12">
-				<p class="width_height_depth">Высота: </p>	
-				<img src="img/height.png" alt="Высота">
-				<label for="from_height">от</label>
-				<input type="text" name="from_height">
-				<label for="to_height">до</label>
-				<input type="text" name="to_height">
-</div>
-				
-<!--End Height-->
-			</div>
-						
-				
-			</aside>
-			<!--End Width, Height, Depth-->
-			<!--Buttons-->
-<div class="row">
-	<div class="col-lg-6 col-md-6"><span class="button"><a href="#">Показать</a></span></div>
-	<div class="col-lg-6 col-md-6"><span class="button grey"><a href="#">Сбросить</a></span></div>
-
-</div>
-			<!--End Buttons-->
-
-	<!--End Left sidebar-->
-	</div>
+	
 	<!--Centrer Block -->
 
 
-		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+		<div class="col-lg-9 col-lg-push-3 col-md-9 col-md-push-3 col-sm-12 col-xs-12">
+
+	
 		<!--Top Small menu-->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="top_header_menu">
 				<a href="#">Главная<span><img src="img/article-arrow.png" alt="article"></span></a>
-				<a href="#">Главная<span><img src="img/article-arrow.png" alt="article"></span></a>
-				<a href="#">Главная</a>
+				<a href="#">Каталог сантехники<span><img src="img/article-arrow.png" alt="article"></span></a>
+				<a href="#">Душевые кабины</a>
 				</div>
 			</div>	
 						<!--End Top Small menu-->
@@ -260,7 +135,7 @@
 						<!--Info Block-->
 						<div class="row">
 				<div class="col-lg-12 col-md-12 hidden-xs hidden-sm" id="info-block">
-					<img src="img/bash.jpg" alt="Душевая кабина">
+					<img src="img/info.jpg" alt="Душевая кабина">
 					<h5>Душевые кабины</h5>
 					<p>
 					Чтобы удачно купить душевую кабину в Москве, достаточно позвонить в интернет-магазин SANTEH-IMPORT, зная примерный размер ванной. Наш интернет-магазин душевых кабин позволяет совершить покупку в комфортных условиях, сэкономив время и силы. Богатый ассортимент нашей продукции порадует вас разнообразием торговых марок, вариантами дизайна, всевозможными размерами и функционалом. Цены на душевые кабины отличаются широким диапазоном, у нас всегда в наличии как недорогие варианты, так и модели премиум-класса.
@@ -505,10 +380,601 @@
 		<a href="#">149</a></p>
 	</div>
 </div>
-
+</div>
 <!--End Tab Menu For Products-->
 
 	<!--End Centrer Block -->
+	<!--Left sidebar-->
+		<div class="col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-9 hidden-sm hidden-xs">
+			<!--Left Drop Menu-->
+			<aside id="left_menu">
+				<p class="catalog">Каталог сантехники<img src="img/menu.png" alt="Menu" class="img-responsive"></p>
+				<ul>
+					<li class="active bash_cabin"><a href="#">Душевые кабины<img src="img/tab_menu.png" alt="TabForMenu"></a>
+						<div class="row bash_drop_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/show.jpg" alt="туалет"></span>
+			<h4>Душевые кабины</h4>
+			<ul>
+				<li><a href="#">Кабины без пара</a></li>
+				<li><a href="#">Кабины с паром</a></li>
+				<li><a href="#">Душевые боксы</a></li>
+				<li><a href="#">Кабины с ванной</a></li>
+				<li><a href="#">Кабины с сауной</a></li>
+			</ul>
+		</div>
+	</div>		
+				
+					</li>
+
+					<li class="not_active bash_block">
+					<a href="#">Душевые ограждения<img src="img/tab_menu.png" alt="TabForMenu">
+					</a>
+<div class="row bash_block_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/bash_block_menu.jpg" alt="туалет"></span>
+			<h4>Душевые Ограждения</h4>
+			<ul>
+				<li><a href="#">Душевые двери</a></li>
+				<li><a href="#">Душевые уголки</a></li>
+				<li><a href="#">Душевые панели</a></li>
+				<li><a href="#">Душевые поддоны</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>		
+					</li>
+					<li class="not_active for_bash">
+					<a href="#">Мебель для ванной<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row for_bash_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/mebel.jpg" alt="туалет"></span>
+			<h4>Мебель для ванной</h4>
+			<ul>
+				<li><a href="#">Мебель современная</a></li>
+				<li><a href="#">Мебель классическая</a></li>
+				<li><a href="#">Мебель угловая</a></li>
+				<li><a href="#">Зеркальные шкафы</a></li>
+				<li><a href="#">Зеркала для ванной</a></li>
+				<li><a href="#">Пеналы и шкафы</a></li>
+				<li><a href="#">Пуфы и кушетки</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>		
+					</li>
+					<li class="not_active bath">
+					<a href="#">Ванны<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row bath_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/bath.jpg" alt="туалет"></span>
+			<h4>Ванны</h4>
+			<ul>
+				<li><a href="#">Акриловые ванны</a></li>
+				<li><a href="#">Чугунные ванны</a></li>
+				<li><a href="#">Стальные ванный</a></li>
+				<li><a href="#">Ванны из камня</a></li>
+				<li><a href="#">Шторки для ванной</a></li>
+				<li><a href="#">Ванна - кабина</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>	
+
+					</li>
+					<li class="not_active san"><a href="#">Санфаянс<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row san_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+		<div class="row">
+		<div class="col-lg-6 col-md-4">
+			<span class="img_bg"><img src="img/san_1.jpg" alt="туалет"></span>
+			<h4>Унитазы</h4>
+			<ul>
+				<li><a href="#">Унитаз с бочком</a></li>
+				<li><a href="#">Унитаз напольный</a></li>
+				<li><a href="#">Унитаз подвесной</a></li>
+				<li><a href="#">Унитаз угловой</a></li>
+				<li><a href="#">Писсуар</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+			</div>
+			<div class="col-lg-6 col-md-4">
+			<span class="img_bg"><img src="img/san_2.jpg" alt="туалет"></span>
+			<h4>Биде</h4>
+			<ul>
+				<li><a href="#">Биде напольное</a></li>
+				<li><a href="#">Биде подвесное</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+			</div>
+			<div class="col-lg-12 col-md-4">
+			<span class="img_bg"><img src="img/san_3.jpg" alt="туалет"></span>
+			<h4>Раковины</h4>
+			<ul>
+				<li><a href="#">Консоли</a></li>
+				<li><a href="#">Раковины постирочные</a></li>
+				<li><a href="#">Раковины одинарные</a></li>
+				<li><a href="#">Раковины двойные</a></li>
+				<li><a href="#">Раковины угловые</a></li>
+				<li><a href="#">Раковины накладные</a></li>
+				<li><a href="#">Раковины врезные</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>	
+	</div>
+					</li>
+					<li class="not_active smes"><a href="#">Смесители<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row smes_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/smes.jpg" alt="туалет"></span>
+			<h4>Смесители</h4>
+			<ul>
+				<li><a href="#">Смесители для раковины</a></li>
+				<li><a href="#">Смесители для ванны</a></li>
+				<li><a href="#">Смесители для кухни</a></li>
+				<li><a href="#">Смесители для душа</a></li>
+				<li><a href="#">Смесители для биде</a></li>
+				<li><a href="#">Смеситель бесконтактные</a></li>
+				<li><a href="#">Душевые лейки и шланги</a></li>
+				<li><a href="#">Верхние души</a></li>
+				<li><a href="#">Гигиенические души</a></li>
+				<li><a href="#">Душевые системы</a></li>
+				<li><a href="#">Фонтаны декоративные</a></li>
+				<li><a href="#">Краны декоративные</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>	
+					</li>
+					<li class="not_active setup"><a href="#">Инсталляции<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row setup_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/setup.jpg" alt="туалет"></span>
+			<h4>Инсталяции</h4>
+			<ul>
+				<li><a href="#">Инсталляции для унитаза</a></li>
+				<li><a href="#">Инсталляции для биде</a></li>
+				<li><a href="#">Инсталляции для писсуара</a></li>
+				<li><a href="#">Инсталяции для раковины</a></li>
+				<li><a href="#">Сливные бачки</a></li>
+				<li><a href="#">Клавиши смыва</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>	
+
+					</li>
+					<li class="not_active polotno"><a href="#">Полотенцесушители<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row polotno_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/smes.jpg" alt="туалет"></span>
+			<h4>Полотенцесушители</h4>
+			<ul>
+				<li><a href="#">Полотенцесушители водяные</a></li>
+				<li><a href="#">Полотенцесушители электрические</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>	
+					</li>
+					<li class="not_active aks"><a href="#">Аксессуары<img src="img/tab_menu.png" alt="TabForMenu" ></a>
+<div class="row aks_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/aks.jpg" alt="туалет"></span>
+			<h4>Аксессуары для ванной</h4>
+			<ul>
+				<li><a href="#">Дозаторы</a></li>
+				<li><a href="#">Мыльницы</a></li>
+				<li><a href="#">Поручни для ванной</a></li>
+				<li><a href="#">Бумагодержатели</a></li>
+				<li><a href="#">Крючки для ванной</a></li>
+				<li><a href="#">Стаканы для ванной</a></li>
+				<li><a href="#">Ёршики для ванной</a></li>
+				<li><a href="#">Решетки для ванной</a></li>
+				<li><a href="#">Полки для ванной</a></li>
+				<li><a href="#">Полотенцедержатели</a></li>
+				<li><a href="#">Стойки</a></li>
+				<li><a href="#">Зеркала для ванной</a></li>
+				<li><a href="#">Светильники для ванной</a></li>
+				<li><a href="#">Вёдра для ванной</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+		</div>
+	</div>	
+					</li>
+					<li class="not_active moik"><a href="#">Мойки<img src="img/tab_menu.png" alt="TabForMenu"></a>
+
+<div class="row moik_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/moik.jpg" alt="туалет"></span>
+			<h4>Мойки</h4>
+			<ul>
+				<li><a href="#">Мойки из камня</a></li>
+				<li><a href="#">Мойки из керамики</a></li>
+			</ul>
+		</div>
+	</div>
+					</li>
+					<li class="not_active bass"><a href="#">Бассейны<img src="img/tab_menu.png" alt="TabForMenu"></a>
+<div class="row bass_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="img_bg"><img src="img/bas.jpg" alt="туалет"></span>
+			<h4>Бассейны</h4>
+			<ul>
+				<li><a href="#">Минибассейны</a></li>
+				<li><a href="#">Сауны и Бани</a></li>
+			</ul>
+		</div>
+	</div>
+					</li>
+					<li class="not_active brands"><a href="#">Бренды<img src="img/tab_menu.png" alt="TabForMenu"></a>
+		<div class="row brands_menu">
+		<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" >
+			<span class="active_btn brand_tab_menu">По брендам</span>
+			<span class="country_tab_menu">По странам</span>
+			
+			
+		</div>
+		<div class="col-lg-3 col-md-3 country_tab">
+			<p>Англия</p>
+			<a href="#">Burlington</a>
+			<p>Германия</p>
+			<a href="#">Am.Pm</a>
+			<a href="#">Arbonia</a>
+			<a href="#">BandHours</a>
+			<a href="#">Children New</a>
+			<a href="#">Duravit</a>
+			<a href="#">Grohe</a>
+			<a href="#">Grundfos</a>
+			<a href="#">Hansgrohe</a>
+			<a href="#">Kaldewei</a>
+			<a href="#">Keuco</a>
+			<a href="#">Lagard</a>
+			<a href="#">Oventrop</a>
+			<a href="#">Pelipal</a>
+			<a href="#">Pharo</a>
+			<a href="#">Puris</a>
+			<a href="#">Sanit</a>
+			<a href="#">Tece</a>
+			<a href="#">Viega</a>
+			<a href="#">Villeroy &amp; Boch</a>
+			<a href="#">Wasserfalle</a>
+			<a href="#">Zehnder</a>
+			<p>Греция</p>
+			<a href="#">Sanitec</a>
+			<p>Дания</p>
+			<a href="#">Damixa</a>
+		</div>
+		<div class="col-lg-3 col-md-3 country_tab">
+			<p>Испания</p>
+			<a href="#">Roca</a>
+			<p>Италия</p>
+			<a href="#">Art&amp;Max</a>
+			<a href="#">ArtCeram</a>
+			<a href="#">Azzurra</a>
+			<a href="#">Bagno &amp; Associati</a>
+			<a href="#">Bandini</a>
+			<a href="#">BelBagno</a>
+			<a href="#">Bossini</a>
+			<a href="#">Bugnatese</a>
+			<a href="#">Cezares</a>
+			<a href="#">Devon &amp; Devon</a>
+			<a href="#">Emmevi</a>
+			<a href="#">Eurodesign</a>
+			<a href="#">Fortezza</a>
+			<a href="#">Globo</a>
+			<a href="#">GSI</a>
+			<a href="#">Hatria</a>
+			<a href="#">Idea Stella</a>
+			<a href="#">Iside</a>
+			<a href="#">Jacuzzi</a>
+			<a href="#">Kerasan</a>
+			<a href="#">La Tezza</a>
+			<a href="#">Labor Legno</a>
+			<a href="#">Lineatre</a>
+			<a href="#">Margoli</a>
+			<a href="#">Migliore</a>
+		</div>
+		<div class="col-lg-3 col-md-3 country_tab">
+			<a href="#">Nicolazzi</a>
+			<a href="#">Simas</a>
+			<a href="#">Tessoro</a>
+			<a href="#">Teuco</a>
+			<a href="#">Tiffany World</a>
+			<p>Китай</p>
+			<a href="#">Eago</a>
+			<a href="#">Erlit</a>
+			<a href="#">GEMY</a>
+			<p>Польша</p>
+			<a href="#">Cersanit</a>
+			<a href="#">Victory SPA</a>
+			<p>Португалия</p>
+			<a href="#">Recor</a>
+			<p>Россия</p>
+			<a href="#">Aquanet</a>
+			<a href="#">Aqwella</a>
+			<a href="#">Astra-Form</a>
+			<a href="#">Doctor Jet</a>
+			<a href="#">Edelform</a>
+			<a href="#">Energy</a>
+			<a href="#">Opadiris</a>
+			<a href="#">Sanvit</a>
+			<a href="#">Акватон</a>
+			<a href="#">Верона</a>
+			<a href="#">Стилье</a>
+			<p>Россия-Италия</p>
+			<a href="#">Vegas-Glass</a>
+		</div>
+		<div class="col-lg-3 col-md-3 country_tab">
+			<p>Словения</p>
+			<a href="#">Kolpa-San</a>
+			<p>Турция</p>
+			<a href="#">VitrA</a>
+			<p>Финляндия</p>
+			<a href="#">Ido</a>
+			<a href="#">Oras</a>
+			<a href="#">Timo</a>
+			<p>Франция</p>
+			<a href="#">Jacob Delafon</a>
+			<a href="#">La Beaute</a>
+			<a href="#">Valentin</a>
+			<p>Чехия</p>
+			<a href="#">Alcaplast</a>
+			<a href="#">Jika</a>
+			<a href="#">Ravak</a>
+			<a href="#">Riho</a>
+			<p>Швейцария</p>
+			<a href="#">Geberit</a>
+			<a href="#">Laufen</a>
+			<p>Швеция</p>
+			<a href="#">Gustavsberg</a>
+			<a href="#">Ifo</a>
+			<a href="#">Romance Collection</a>
+			<p>Эстония</p>
+			<a href="#">Balteco</a>
+			<a href="#">Piano Balteco</a>
+		</div>
+		<div class="col-lg-3 col-md-3 brand_tab">
+			<p>A</p>
+			<a href="#">Alcaplast <span>(Чехия)</span></a>
+			<a href="#">Am.Pm <span>(Германия)</span></a>
+			<a href="#">Aquanet <span>(Россия)</span></a>
+			<a href="#">Aqwella <span>(Россия)</span></a>
+			<a href="#">Arbonia <span>(Германия)</span></a>
+			<a href="#">Art&amp;Max <span>(Италия)</span></a>
+			<a href="#">ArtCeram (Италия)</a>
+			<a href="#">Astra-Form <span>(Россия)</span></a>
+			<a href="#">Azzurra <span>(Италия)</span></a>
+			<p>B</p>
+			<a href="#">Bagno &amp; Associati <span>(Италия)</span></a>
+			<a href="#">Balteco <span>(Эстония)</span></a>
+			<a href="#">BandHours <span>(Германия)</span></a>
+			<a href="#">Bandini <span>(Италия)</span></a>
+			<a href="#">BelBagno <span>(Италия)</span></a>
+			<a href="#">Bossini <span>(Италия)</span></a>
+			<a href="#">Bugnatese <span>(Италия)</span></a>
+			<a href="#">Burlington <span>(Англия)</span></a>
+			<p>C</p>
+			<a href="#">Cersanit <span>(Польша)</span></a>
+			<a href="#">Cezares <span>(Италия)</span></a>
+			<a href="#">Children New <span>(Германия)</span></a>
+			<p>D</p>
+			<a href="#">Damixa <span>(Дания)</span></a>
+			<a href="#">Devon &amp; Devon <span>(Италия)</span></a>
+			<a href="#">Doctor Jet <span>(Россия)</span></a>
+			<a href="#">Duravit <span>(Германия)</span></a>
+			<p>E</p>
+			<a href="#">Eago <span>(Китай)</span></a>
+		</div>
+		<div class="col-lg-3 col-md-3 brand_tab">
+			<a href="#">Edelform <span>(Россия)</span></a>
+			<a href="#">Emmevi <span>(Италия)</span></a>
+			<a href="#">Energy <span>(Россия)</span></a>
+			<a href="#">Erlit <span>(Китай)</span></a>
+			<a href="#">Eurodesign <span>(Италия)</span></a>
+			<p>F</p>
+			<a href="#">Fortezza <span>(Италия)</span></a>
+			<p>G</p>
+			<a href="#">GEMY <span>(Китай)</span></a>
+			<a href="#">GSI <span>(Италия)</span></a>
+			<a href="#">Geberit <span>(Швейцария)</span></a>
+			<a href="#">Globo <span>(Италия)</span></a>
+			<a href="#">Grohe <span>(Германия)</span></a>
+			<a href="#">Grundfos <span>(Германия)</span></a>
+			<a href="#">Gustavsberg <span>(Швеция)</span></a>
+			<p>H</p>
+			<a href="#">Hansgrohe <span>(Германия)</span></a>
+			<a href="#">Hatria <span>(Италия)</span></a>
+			<p>I</p>
+			<a href="#">Idea Stella <span>(Италия)</span></a>
+			<a href="#">Ido <span>(Финляндия)</span></a>
+			<a href="#">Ifo <span>(Швеция)</span></a>
+			<a href="#">Iside <span>(Италия)</span></a>
+			<p>J</p>
+			<a href="#">Jacob Delafon <span>(Франция)</span></a>
+			<a href="#">Jacuzzi <span>(Италия)</span></a>
+			<a href="#">Jika <span>(Чехия)</span></a>
+			<p>K</p>
+			<a href="#">Kaldewei <span>(Германия)</span></a>
+			<a href="#">Kerasan <span>(Италия)</span></a>
+		</div>
+		<div class="col-lg-3 col-md-3 brand_tab">
+			<a href="#">Keuco <span>(Германия)</span></a>
+			<a href="#">Kolpa-San <span>(Словения)</span></a>
+			<p>L</p>
+			<a href="#">La Beaute <span>(Франция)</span></a>
+			<a href="#">La Tezza <span>(Италия)</span></a>
+			<a href="#">Labor Legno <span>(Италия)</span></a>
+			<a href="#">Lagard <span>(Германия)</span></a>
+			<a href="#">Laufen <span>(Швейцария)</span></a>
+			<a href="#">Lineatre <span>(Италия)</span></a>
+			<p>M</p>
+			<a href="#">Margaroli <span>(Италия)</span></a>
+			<a href="#">Migliore <span>(Италия)</span></a>
+			<p>N</p>
+			<a href="#">Nicolazzi <span>(Италия)</span></a>
+			<p>O</p>
+			<a href="#">Opadiris <span>(Россия)</span></a>
+			<a href="#">Oras <span>(Финляндия)</span></a>
+			<a href="#">Oventrop <span>(Германия)</span></a>
+			<p>P</p>
+			<a href="#">Pelipal <span>(Германия)</span></a>
+			<a href="#">Pharo <span>(Германия)</span></a>
+			<a href="#">Piano Balteco <span>(Эстония)</span></a>
+			<a href="#">Puris <span>(Германия)</span></a>
+			<p>R</p>
+			<a href="#">Ravak <span>(Чехия)</span></a>
+			<a href="#">Recor <span>(Португалия)</span></a>
+			<a href="#">Riho <span>(Чехия)</span></a>
+			<a href="#">Roca <span>(Испания)</span></a>
+			<a href="#">Romance Collection <span>(Швеция)</span></a>
+		</div>
+		<div class="col-lg-3 col-md-3 brand_tab">
+			<p>S</p>
+			<a href="#">Sanit <span>(Германия)</span></a>
+			<a href="#">Sanitec <span>(Греция)</span></a>
+			<a href="#">Sanvit <span>(Россия)</span></a>
+			<a href="#">Simas <span>(Италия)</span></a>
+			<p>T</p>
+			<a href="#">Tece <span>(Германия)</span></a>
+			<a href="#">Tessoro <span>(Италия)</span></a>
+			<a href="#">Teuco <span>(Италия)</span></a>
+			<a href="#">Tiffany World <span>(Италия)</span></a>
+			<a href="#">Timo <span>(Финляндия)</span></a>
+			<p>V</p>
+			<a href="#">Valentin <span>(Франция)</span></a>
+			<a href="#">Vegas-Glass <span>(Россия-Италия)</span></a>
+			<a href="#">Victory SPA <span>(Польша)</span></a>
+			<a href="#">Viega <span>(Германия)</span></a>
+			<a href="#">Villeroy &amp; Boch <span>(Германия)</span></a>
+			<a href="#">VitrA <span>(Турция)</span></a>
+			<p>W</p>
+			<a href="#">Wasserfalle <span>(Германия)</span></a>
+			<p>Z</p>
+			<a href="#">Zehnder <span>(Германия)</span></a>
+			<p>А</p>
+			<a href="#">Акватон <span>(Россия)</span></a>
+			<p>В</p>
+			<a href="#">Верона <span>(Россия)</span></a>
+			<p>С</p>
+			<a href="#">Стилье <span>(Россия)</span></a>
+		</div>
+	</div>	
+	</li>
+				</ul>
+			</aside>
+			<!--End Left Drop Menu-->
+
+			<!--Menu Categories-->
+
+			<aside id="categories">
+<p>Категории</p>
+<ul>
+	<li><a href="#"><img src="img/input_off.png" alt="">Кабины без пара</a></li>
+	<li><a href="#"><img src="img/input_off.png" alt="">Кабины с паром</a></li>
+	<li><a href="#"><img src="img/input_off.png" alt="">Душевые боксы</a></li>
+	<li><a href="#"><img src="img/input_off.png" alt="">Кабины с ванной</a></li>
+	<li><a href="#"><img src="img/input_off.png" alt="">Кабины с сауной</a></li>
+	<li><a href="#" class="active_categories"><img src="img/input_off.png" alt="">Смотреть все</a></li>
+</ul>
+					
+			</aside>
+
+			<!--End Menu Categories-->
+			<!--Brand Left Sidebar-->
+			<aside id="brand_sidebar">
+				<p>Бренды</p>
+				<ul>
+					<li><a href="#"><img src="img/input_off.png" alt="">Am.Pm <span>(Германия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Aquanet <span>(Россия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Balteco <span>(Эстония)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">BandHours <span>(Германия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Cezares <span>(Италия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Doctor Jet <span>(Россия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Eago <span>(Китай)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Edelform <span>(Россия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Erlit <span>(Китай)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Ido <span>(Финляндия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Jacuzzi <span>(Италия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Lagard <span>(Германия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Migliore <span>(Италия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Teuco <span>(Италия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Timo <span>(Финляндия)</span></a></li>
+					<li><a href="#"><img src="img/input_off.png" alt="">Wasserfalle <span>(Германия)</span></a></li>
+				</ul>
+
+			</aside>
+
+			<!--End Brand Left Sidebar-->
+
+			<!--Extended Filter-->
+			<aside id="extended_filter">
+				<span>Расширенный фильтр<img src="img/minus.png" alt="Minus"></span>
+				<p>Цена</p>
+				<label for="from">От</label>
+				<input type="text" name="from" id="minCost" placeholder="0"value="0">
+				<label for="to">До</label>
+				<input type="text" name="to" id="maxCost" value="100000">
+				<div id="slider"></div>
+			</aside>
+
+			<!--End Extended Filter-->
+			<!--Width, Height, Depth-->
+			<aside>
+			<div class="row" id="change_size">
+	<!--Title for size-->
+			<div class="col-lg-12 col-md-12">
+	<p>Габариты в сантиметрах</p>
+	</div>
+	<!--End Title for size-->
+	<!--Width-->
+			<div class="col-lg-12 col-md-12">
+					<p class="width_height_depth">Ширина:</p> 
+			<img src="img/width.png" alt="Ширина">
+					<label for="from_width">от</label>
+						<input type="text" name="from_width">
+					<label for="to_width">до</label>
+						<input type="text" name="to_width">
+				</div>
+	<!--End Width-->
+	<!--Depth-->
+				<div class="col-lg-12 col-md-12">
+					<p class="width_height_depth">Глубина:</p>
+								
+				 <img src="img/depth.png" alt="Глубина">
+					 <label for="from_depth" class="width_left">от</label>
+						<input type="text" name="from_depth">
+					 <label for="to_depth">до</label>
+					 	<input type="text" name="to_depth">
+				</div>
+	<!--End Depth-->
+	<!--Height-->
+			<div class="col-lg-12 col-md-12">
+				<p class="width_height_depth">Высота: </p>	
+				<img src="img/height.png" alt="Высота">
+				<label for="from_height">от</label>
+				<input type="text" name="from_height">
+				<label for="to_height">до</label>
+				<input type="text" name="to_height">
+</div>
+				
+<!--End Height-->
+			</div>
+						
+				
+			</aside>
+			<!--End Width, Height, Depth-->
+			<!--Buttons-->
+<div class="row buttons_lg">
+	<div class="col-lg-6 col-md-6"><span class="button"><a href="#">Показать</a></span></div>
+	<div class="col-lg-6 col-md-6"><span class="button grey"><a href="#">Сбросить</a></span></div>
+
+</div>
+			<!--End Buttons-->
+</div>
+	<!--End Left sidebar-->
 </div>
 </div>
 </div>
@@ -599,14 +1065,56 @@ Santeh-import.ru - интернет-магазин душевых кабин и 
 </footer>
 <!--End Footer-->
 
+<!--Mobile Menu-->
+<aside id="mobile_menu_left">
+	<p>Главное меню<img src="img/menu.png" alt="Menu" class="img-responsive"></p>
+	<ul>
+		<li><a href="#">О нас<img src="img/tab_menu.png" alt=""></a></li>
+		<li><a href="#">Покупателям<img src="img/tab_menu.png" alt=""></a></li>
+		<li><a href="#">Информация<img src="img/tab_menu.png" alt=""></a></li>
+		<li><a href="#">Партнёрам<img src="img/tab_menu.png" alt=""></a></li>
+	</ul>
+</aside>
+
+<!--End Mobile Menu-->
 
 
 
-
-
-
+<!--Modal Window Feedback-->
+<div id="modal_window_row">
+<div id="modal_window">
+	<p>Форма обратной связи <img class="arcticmodal-close" src="img/close.png" alt="Закрыть"></p>
+	<form action="">
+		<label for="name">Имя:</label><br>
+		<input type="text" name="name">
+		<label for="phone"><sup>*</sup>Контактный телефон:</label><br>
+		<input type="text" name="phone" value="+7(__)__-__-__">
+		<button>Заказать</button>
+	</form>
+</div>
+	</div>
+<!--End feedback modal window-->
+<!--Mailto modal window-->
+<div id="modal_email">
+	<div id="modal_email_window">
+		<p>Свободная форма письма<img class="arcticmodal-close" src="img/close.png" alt="Закрыть"></p>
+		<form action="">
+			<label for="sname">Имя:</label>
+			<br><input type="text" name="sname">
+			<br><label for="email"><sup>*</sup>Email:</label>
+			<br><input type="text" name="email"><br>
+			<label for="text">Текст письма</label>
+			<br><textarea name="text"	cols="30" rows="10"></textarea>
+			<button>Отправить</button>
+		</form>
+	</div>
+</div>
+<!--End mailto modal window-->
 	<script src="libs/jquery/jquery.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/jquery/jquery-1.7.2.min.js"></script>
+	<script src="libs/jquery/jquery.ui-slider.js"></script>
+	<script src="libs/articmodal/jquery.arcticmodal.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
