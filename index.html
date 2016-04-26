@@ -33,14 +33,14 @@
 <div class="container-fluid"  id="head_lg">
 <div class="container">
 	<div class="row">
-		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#"><img src="img/logo.png" alt="Brand" class="img-responsive brand"></a></div>
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="#"><img src="img/logo.png" alt="Brand" class="brand"></a></div>
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" id="contacts">
 			<p class="phone_number">8 800 700-77-71</p>
 			<p class="phone_number">8 499 923-34-51</p>
 			<p class="time_for_call  hidden-sm hidden-xs">Ежедневно с 9:30 до 19:00</p>
 		</div>
 
-		<div class="col-lg-3 col-md-3 feedback  hidden-sm hidden-xs">
+		<div class="col-lg-4 col-md-4 feedback  hidden-sm hidden-xs">
 			
 				<div class="col-lg-6 col-md-6">
 				<a id="feedback" href="#modal_window">Заказать Звонок</a>
@@ -48,16 +48,18 @@
 				<div class="col-lg-6 col-md-6"><a href="#" id="sms">Написать нам</a></div>
 			
 				<div class="col-lg-12 col-md-12 search">
-					<form action="" method="POST">
+					<form>
 						<input type="text" id="search_lg" name="search" placeholder=" Поиск..."><img src="img/search.png" alt="Поиск" id="search_btn">
 					</form>
 				</div>
 			
 		</div>
-		<div class="col-lg-3 col-md-3 last_lg  hidden-sm hidden-xs">
+		<div class="col-lg-2 col-md-2 last_lg  hidden-sm hidden-xs">
 		<div class="row">
 			<div class="col-lg-6 col-md-6" id="auth">
-			<a href="#" title="Войти">Вход</a><img src="img/sep.gif" alt="" class="img-responsive"></div>
+			<a href="#" title="Войти">Вход</a>
+			</div>
+			<img src="img/sep.gif" alt="">
 			<div class="col-lg-6 col-md-6" id="register"><a href="#" title="Регистрация">Регистрация</a></div>			
 			<div class="col-lg-12 col-md-12" id="cart_lg">
 				<span><img src="img/cart.png" alt="Корзина"><sub>3</sub></span>					
@@ -151,20 +153,20 @@
 				<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" id="variable">
 					<div class="row">
 						<div class="col-lg-6 col-md-6" id="sort">
-							<select name="" id="">
-								<option value="">Сортировать</option>
-								<option value="">По цене по возрастанию</option>
-								<option value="">По цене по убыванию</option>
+							<select>
+								<option>Сортировать</option>
+								<option>По цене по возрастанию</option>
+								<option>По цене по убыванию</option>
 							</select>
 							<p>Вид страницы: <img src="img/four_product.png" alt="" class="active"><img src="img/row_product.png" alt=""></p>
 						</div>
 						<div class="col-lg-6 col-md-6" id="count">
 							<p>Выбрано 587 товаров, на странице по:
-							 <select name="" id="">
-								<option value="">4</option>
-								<option value="">20</option>
-								<option value="">40</option>
-								<option value="">60</option>
+							 <select>
+								<option>4</option>
+								<option>20</option>
+								<option>40</option>
+								<option>60</option>
 							</select></p>
 						</div>
 					</div>
@@ -179,13 +181,14 @@
 <div class="row" id="products_block_center">
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">
 	<img src="img/product.jpg" alt="Продукт" class="img-responsive">
+<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 	<a href="#">Душевая кабина <br>Timo T-1180</a>
-	<span>
+	<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+	</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -194,13 +197,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">
 	<img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 	<a href="#">Душевая кабина<br> Timo T-1180</a>
-	<span>
+	<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+	</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -209,13 +213,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">
 	<img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 	<a href="#">Душевая кабина<br> Timo T-1180</a>
-	<span>
+	<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -224,13 +229,14 @@
 	</div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -239,13 +245,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -254,13 +261,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -269,13 +277,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -284,13 +293,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -299,13 +309,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -314,13 +325,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -329,13 +341,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -344,13 +357,14 @@
 </div>
 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product">	
 <img src="img/product.jpg" alt="Продукт" class="img-responsive">
+	<span class="fast_rewiew">Быстрый просмотр<img src="img/search.png" alt="Просмотр"></span>
 <a href="#">Душевая кабина <br>Timo T-1180</a>
-<span>
+<div class="description">
 	<p>Гарантия: <span>1 год</span></p>
 	<p>Бренд <span>Timo</span></p>
 	<p>Страна пр.: <span>Финляндия</span></p>
 	<p>ШxГxВ <span>90x90x220 см</span></p>
-</span>
+</div>
 <div class="row options">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><sub>Цена</sub><b>56 000руб</b></div>
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 buy">Купить</div>
@@ -365,11 +379,11 @@
 	<div class="col-lg-12 col-md-12 change_page">
 		<a href="#contacts" class="hidden-lg hidden-md top"><img src="img/top.png" alt="">Наверх</a>
 		<p class="hidden-sm hidden-xs">Выбрано 587 товаров, на странице по:
-							 <select name="" id="">
-								<option value="">4</option>
-								<option value="">20</option>
-								<option value="">40</option>
-								<option value="">60</option>
+							 <select>
+								<option>4</option>
+								<option>20</option>
+								<option>40</option>
+								<option>60</option>
 							</select></p>
 							<p>Страницы:<a href="#">1</a>
 		<a href="#">2</a>
@@ -914,7 +928,7 @@
 				<span>Расширенный фильтр<img src="img/minus.png" alt="Minus"></span>
 				<p>Цена</p>
 				<label for="from">От</label>
-				<input type="text" name="from" id="minCost" placeholder="0"value="0">
+				<input type="text" name="from" id="minCost" placeholder="0" value="0">
 				<label for="to">До</label>
 				<input type="text" name="to" id="maxCost" value="100000">
 				<div id="slider"></div>
@@ -975,7 +989,6 @@
 			<!--End Buttons-->
 </div>
 	<!--End Left sidebar-->
-</div>
 </div>
 </div>
 <!--End Content-->
@@ -1084,7 +1097,7 @@ Santeh-import.ru - интернет-магазин душевых кабин и 
 <div id="modal_window_row">
 <div id="modal_window">
 	<p>Форма обратной связи <img class="arcticmodal-close" src="img/close.png" alt="Закрыть"></p>
-	<form action="">
+	<form>
 		<label for="name">Имя:</label><br>
 		<input type="text" name="name">
 		<label for="phone"><sup>*</sup>Контактный телефон:</label><br>
@@ -1098,7 +1111,7 @@ Santeh-import.ru - интернет-магазин душевых кабин и 
 <div id="modal_email">
 	<div id="modal_email_window">
 		<p>Свободная форма письма<img class="arcticmodal-close" src="img/close.png" alt="Закрыть"></p>
-		<form action="">
+		<form>
 			<label for="sname">Имя:</label>
 			<br><input type="text" name="sname">
 			<br><label for="email"><sup>*</sup>Email:</label>
@@ -1110,6 +1123,131 @@ Santeh-import.ru - интернет-магазин душевых кабин и 
 	</div>
 </div>
 <!--End mailto modal window-->
+<!--Modal product-->
+<div id="modal_product">
+	<div class="container modal_product_window">
+		<div class="row">
+		<div class="col-lg-12 col-md-12 title_modal_product">
+		<img src="img/close_b.png" alt="Закрыть" class="arcticmodal-close">
+		<h2>Душевая кабина Timo T-1180</h2>
+		</div>
+		<div class="col-lg-12 col-md-12 prem">
+			<p>Преимущества</p>
+		</div>
+		<div class="col-lg-4 col-md-4 left_block_modal">
+		<img src="img/timo-t.jpg" alt="кабина" class="img-responsive">
+		<img src="img/timo-t.jpg" style="width:30%;height:72px;" alt="">
+		<img src="img/t-1180.jpg" alt="" style="width:30%;height:72px;">
+		<img src="img/timo.jpg" alt="" style="width:30%;height:72px;">
+		</div>
+				<div class="col-lg-4 col-md-4 description_product_modal">
+					<p>Гарантия: 1 год</p>
+					<p>Бренд: Timo</p>
+					<p>Страна: Финляндия</p>
+					<p>Коллекция: Standart</p>
+					<p>Ширина <img src="img/width.png" alt="Ширина"> : 80 см</p>
+					<p>Глубина <img src="img/depth.png" alt="Глубина"> : 80 см</p>
+					<p>Высота <img src="img/height.png" alt="Высота"> : 220 см</p>
+					<p class="have_items">В наличии</p>
+					<div class="tabs_nal">
+						<span class="have_nal"></span>
+						<span class="have_nal"></span>
+						<span></span>
+					</div>
+					<div class="row price_product">
+						<div class="col-lg-5 col-md-5">Наша цена:</div>
+						<div class="col-lg-7 col-md-7 price">50 100 <span>руб.</span></div>
+					</div>
+					<a href="#" class="more">Подробнее</a>
+					<a href="#" class="one_click">Купить в один клик</a>
+					<a href="#" class="add_to_cart">Добавить в корзину</a>
+				</div>
+				<div class="col-lg-4 col-md-4 right_block_modal">
+					<div class="row block_prem">
+						<div class="col-lg-3 col-md-3 img_prem">
+							<img src="img/prem_1.png" alt="">
+						</div>
+						<div class="col-lg-9 col-md-9 desc_prem">
+							<p class="title_prem">
+							10 лет на рынке
+							</p>
+							<p>
+							Квалифицированные специалисты внимательно выслушают
+							 все пожелания и предложат оптимальное 
+							 решение. 
+							 </p>
+						</div>
+						</div>
+						<div class="row block_prem">
+						<div class="col-lg-3 col-md-3 img_prem">
+							<img src="img/prem_2.png" alt="">
+						</div>
+						<div class="col-lg-9 col-md-9 desc_prem">
+							<p class="title_prem">
+							Ассортимент <span>2 186</span> товаров
+							</p>
+							<p>
+							Учитывая пожелания клиентов постоянно 
+							дорабатывается и публикуется 
+							поробный каталог сертифицированной продукции.
+							 </p>
+						</div>
+						</div>
+						<div class="row block_prem">
+						<div class="col-lg-3 col-md-3 img_prem">
+							<img src="img/prem_3.png" alt="">
+						</div>
+						<div class="col-lg-9 col-md-9 desc_prem">
+							<p class="title_prem">
+							Надежный партнер
+							</p>
+							<p>
+							Наши клиенты - это обычные покупатели,
+							 дизайнеры, магазины, 
+							 строительные компании и государственные учреждения. 
+							</p>
+						</div>
+						</div>
+						<div class="row block_prem">
+						<div class="col-lg-3 col-md-3 img_prem">
+							<img src="img/prem_4.png" alt="">
+						</div>
+						<div class="col-lg-9 col-md-9 desc_prem">
+							<p class="title_prem">
+							гибкие условия
+							</p>
+							<p>
+							Чтобы покупка была максимально выгодной,
+							мы предлагаем индивидуальный подход,
+							 это позволит нам совместить цены каталога. 
+							</p>
+						</div>
+						</div>
+						<div class="row block_prem">
+						<div class="col-lg-3 col-md-3 img_prem">
+							<img src="img/prem_5.png" alt="">
+						</div>
+						<div class="col-lg-9 col-md-9 desc_prem">
+							<p class="title_prem">
+							Акции и скидки
+							</p>
+							<p>
+							Постоянные скидки, бонусы и акции
+							 делают товар недорогим, 
+							 а покупку максимально выгодной и приятной. 
+							</p>
+						</div>
+						</div>
+					</div>
+				</div>	
+				<div class="col-lg-12 col-md-12 description_for_product">
+					Душевая кабина Timo T-1180 обладает компактными размерами и радиальной формой. Поддон средней высоты выполнен из акрила, цвет белый. Толстое стекло ударопрочное, легко моется. Оборудование включает в себя два вида душа, гидромассажные форсунки, систему освещения и вентиляции, слива, сифон. Косметические средства можно ставить на стеклянную полку.
+				</div>	
+		</div>
+		
+	</div>
+</div>
+<!--End modal product-->
 	<script src="libs/jquery/jquery.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.js"></script>
 	<script src="libs/jquery/jquery-1.7.2.min.js"></script>
