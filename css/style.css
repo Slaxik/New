@@ -323,6 +323,10 @@ background-color: #222E46;
 	background-color:#152A45;
 	cursor: pointer;
 }
+.button:hover{
+	background-color: #FF5B06;
+	text-decoration: none;
+}
 .button>a{
 color:#fff;
 }
