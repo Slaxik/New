@@ -42,6 +42,10 @@ body{
 	background: url(../img/fon-header.jpg) #152A45 no-repeat left center;
 	background-size:40% 100%;
 }
+.head_lg>div.row{
+	max-width: 1366px;
+	margin:auto;
+}
 /*End Head*/
 /*Left sidebar*/
 #left_menu{
@@ -325,6 +329,8 @@ background-color: #222E46;
 }
 .button:hover{
 	background-color: #FF5B06;
+}
+.button:hover .button>a:hover{
 	text-decoration: none;
 }
 .button>a{
