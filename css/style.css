@@ -47,15 +47,18 @@ a.header_menu_hover::before{
 .top_header{
 	background:url(../img/top_header_bg.png) no-repeat top center;
 	height: 23px;
+	width: 100%;	
 	margin-bottom: -1px;
 	border-bottom:1px solid #000;
 }
 .top_header>div.container-fluid{
 	max-width: 1200px;
+	margin:auto;
 }
 /*End header top*/
 /*Head menu*/
 .head_lg{
+	width: 100%;
 	background: url(../img/head_bg.png) center top no-repeat;
 	background-size: auto;
 	height: 100px;
@@ -128,7 +131,7 @@ height:30px;
 	color:#000;
 	background-color: #fff;
 	position: absolute;
-	left:3.7em;
+	left:3.5em;
 	text-align: center;
 	bottom: 6.4em;
 	padding: 0 4px;
@@ -145,7 +148,7 @@ height:30px;
 	content: '';
 position: absolute;
 top: 0;
-left:7.75em;
+left:7.6em;
 display: block;
 width: 1px;
 height: 38px;
@@ -154,7 +157,7 @@ background: #fff;
 .cart{
 	display: block;	
 	bottom: 6em;
-	left:5em;
+	left:4.5em;
 	position: absolute;
 }
 .cart>a>img{

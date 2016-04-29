@@ -137,8 +137,8 @@ width:730px;
 	float:right;
 }
 .views{
-top:3em;
-left:0.3em;
+	top:3em;
+	left:0.3em;
 }
 .cart{
 	bottom: 1em;
@@ -272,7 +272,7 @@ font-size:18px;
 	font-size: 16px;
 }
 #count>p{
-margin-left:1.5em;
+margin-left:0;
 	}
 #variable{
 		width: 100%;
