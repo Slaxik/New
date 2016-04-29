@@ -14,10 +14,9 @@ body{
 }
 /*Header lg top menu*/
 #header_right_menu{
-	margin-left: 0.8em;
+	
 }
 #header_right_menu>ul{
-	margin-right:0.45em;
 	list-style: none;
 	float:right;
 }
@@ -30,18 +29,29 @@ text-decoration: underline;
 #header_right_menu>ul>li>a{
 	display: block;
 	padding: 3px 6px;
-	text-decoration: none;
-	font-size: 12px;
 	color:#fff;
+	font-size:12px;
 }
-#header_right_menu>ul>li>a:hover{
-	text-decoration: none;
+a.header_menu_i::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 33px;
+	height: 2px;
+	display: block;
+	background: #fff;
+}
+a.header_menu_hover::before{
+	display: none;
 }
 .top_header{
 	background:url(../img/top_header_bg.png) no-repeat top center;
 	height: 23px;
 	margin-bottom: -1px;
 	border-bottom:1px solid #000;
+}
+.top_header>div.container-fluid{
+	max-width: 1200px;
 }
 /*End header top*/
 /*Head menu*/
@@ -143,7 +153,7 @@ background: #fff;
 }
 .cart{
 	display: block;	
-	bottom: 6.35em;
+	bottom: 6em;
 	left:5em;
 	position: absolute;
 }

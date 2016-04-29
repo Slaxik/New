@@ -214,6 +214,11 @@ i = 0;
 	
 });
 }
+$('#nav_header>li>a').hover(function() {
+	$(this).removeClass('header_menu_hover').css('text-decoration', 'none');
+}, function() {
+	$(this).addClass('header_menu_hover');
+});
 function MobileMenu(){
 var b = $('<a id="close" style="cursor:pointer;position:fixed;height:500px;right:0;width:20%;top:0px;"></a>'); 
 var a = $('#mobile_menu_left');
