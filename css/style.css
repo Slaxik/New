@@ -387,7 +387,7 @@ margin-right:9px;
 #extended_filter>div#name_rub{
 	position: relative;
 	bottom:21px;
-	left:84%;
+	left:72%;
 	font-size:0.8em;
 }
 /* Ширина слайдера */
@@ -806,13 +806,13 @@ background-position: 50% 45%;
 	background-color: #F16726;
 }
 .options>div.price_for_product{
-	margin-top:0.9em;
-	padding:0 0 0.05em 0.05em;
+	margin-top:0.85em;
+	padding:0 0 0 0.05em;
 }
 .options>div.price_for_product>b{
 	float:left;
-	margin-top: -4px;
-	margin-left: 23px;
+	margin-top: -3px;
+	margin-left: 20px;
 }
 .options>div>b>span{
 	font-size:0.8em;

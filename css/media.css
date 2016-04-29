@@ -9,7 +9,7 @@
 content: '';
 position: absolute;
 width: 9px;
-left:84%;
+left:84.8%;
 margin-top: -30px;
 height: 30px;
 background: url(../img/sub-menu-arrow.png) 0 0 no-repeat;
@@ -27,7 +27,7 @@ width:730px;
 width:730px;
 }
 .bath_menu{
-wwidth:730px;
+width:730px;
 }
 .san_menu{
 width:730px;
@@ -167,10 +167,10 @@ left:0.3em;
 }
 .options>div.price_for_product>b{
 	font-size:14px;
-	margin-left: 5px;
+	margin-left: 15px;
 }
 .options>div.price_for_product{
-	padding-bottom: 0.2em;
+	padding-bottom: 0.1em;
 	margin-top: 17px;
 }
 .options>div.buy{
@@ -249,10 +249,11 @@ margin-top: -0.4em;
 #extended_filter>div#name_rub{
 	left:82.5%;
 }
-#change_size>div>p{
-}
 #change_size>div>p.width_height_depth{
 	font-size:14px;
+}
+#change_size>div>input{
+	width:30px;
 }
 .img_for_product{
 	height: 234px;
@@ -373,7 +374,7 @@ footer{
 }
 .count_bottom > p.page_number {
 	margin-left:70%;
-}	
+}
 }
 
 /* Small Devices, Tablets */
@@ -454,18 +455,6 @@ footer{
 .options>div>b{
     font-size: 0.7em;
     padding-bottom: 0.2em;
-}
-.center-block-container>div>div.col-md-4 {
-    width: 29%;
-}
-.center-block-container>div>div.col-md-8{
-	width:71%;
-}
-.col-md-push-4{
-   left:29%;
-}
-.col-md-pull-8{
-	right: 71%;
 }
 }
 /* Large Devices, Wide Screens */
@@ -596,7 +585,7 @@ width:200px;
 		top:-5.55em;
 }
 }
-@media only screen and (min-width: 1170px) and (max-width : 1225px){
+@media only screen and (min-width: 1171px) and (max-width : 1225px){
 .description_for_product>p.big_description{
 	font-size:0.9em;
 }
@@ -632,8 +621,8 @@ width:100%;
 }
 .options>div.price_for_product>b{
 	font-size:14px;
-	margin-left: 5px;
-	padding-bottom: 0.4em;
+	margin-left: 10px;
+	padding-bottom: 0.45em;
 }
 #sort>img{
 	margin-left: 8%;
@@ -657,7 +646,7 @@ width:100%;
 }
 @media only screen and (min-width: 1170px) and (max-width: 1200px){
 #extended_filter>div#name_rub{
-left:80%;
+left:89%;
 }
 .right_footer{
 width:40%;
@@ -670,5 +659,19 @@ width:40%;
 }
 .footer_nav>ul>li>a{
 	font-size:15px;
+}
+}
+@media only screen and (max-width: 1150px){
+.center-block-container>div>div.col-md-3{
+    width: 29%;
+}
+.center-block-container>div>div.col-md-9{
+	width:71%;
+}
+.col-md-push-3{
+   left:29%;
+}
+.col-md-pull-9{
+	right: 71%;
 }
 }
