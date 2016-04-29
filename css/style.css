@@ -600,6 +600,7 @@ margin-top:0.8em;
 line-height: 1;
 margin-left:-3%;
 padding:0;
+height:18px;
 background: url(../img/zebra.gif) repeat;
 width: 100%;
 }
@@ -626,13 +627,13 @@ color:#000;
 /*End Top Small Menu*/
 /*Info Block*/
 #info-block{
-	margin-top:2.7em;
+	margin-top:2.5em;
 	margin-left:-3%;
 	padding: 0;
 }
 #info-block>img{
 	float:left;
-	margin:2.15em 20px 25px -1px;
+	margin:2.05em 20px 25px -1px;
 }
 #info-block>h5{
 color:#6a7180;
@@ -643,7 +644,7 @@ width:100%;
 	color: #6a7180;	
 	font: normal 14px/1.3 Tahoma, Geneva, Verdana, Arial, sans-serif;
 	display: block;
-	margin-top:1.2em;
+	margin-top:1.1em;
 	margin-bottom: 15px;
 }
 #info-block>p.second_p{
@@ -720,7 +721,7 @@ background-position: 50% 45%;
 	margin-left:9px;
 }
 #sort>img.active{
-	padding-top: 0.1em;
+	padding-bottom: 0.1em;
 	border:1px solid #FF3E15;
 }
 #sort>img.not_active_img{
@@ -778,7 +779,8 @@ background-position: 50% 45%;
 	cursor: pointer;
 	position: relative;
 	border:1px solid #EDEDED;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	padding: 0;
 }
 .product:hover{
 	-o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -836,18 +838,21 @@ background-position: 50% 45%;
 }
 .product>div.description{
 	display: block;
-	margin-top: 1em;
+	margin-top: 1.2em;
 	margin-left: 10px;
 }
-.product>div.description>p{
+.product>div.description>ul{
+	list-style: none;
+}
+.product>div.description>ul>li{
 	width:100%;
 	color:#7D8390;
 	float:left;
 	margin-bottom: 0;
 }
-.product>div.description>p>span{
-	float:right;
-	margin-right: 10px;
+.product>div.description>ul>li>span{
+	width:84px;
+	display: inline-block;
 }
 .options{
 	margin-left:0;
@@ -896,13 +901,13 @@ background-position: 50% 45%;
 }
 p.zvonok{
 	color:#FF5903;
+	position: absolute;
+	bottom:-17px;
+	left:2px;
 	margin-bottom: 0;
-	font-size: 0.9em;
+	font-size: 12px;
 }
 /*End Center Block Products*/
-/*Change Page Block*/
-
-/* End Change Page Block */
 /*End Center Block*/
 /*Menu Mobile*/
 #menu_for_mobile{
@@ -919,7 +924,7 @@ p.zvonok{
 	position: absolute;
 	text-align: center;
 	width: 22px;
-	right:26%;
+	right:26.5%;
 	top:5px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -1945,7 +1950,7 @@ height:53px;
 }
 .options_product>.price_line{
 	padding: 1em;
-	height:88px;
+	height:102px;
 	width:100%;
 	background:url(../img/zebra.gif);
 	border-top:1px solid #DDD;
