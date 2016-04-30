@@ -154,11 +154,11 @@ width:100%;
 	margin-left: 0;	
 }
 .options>div.price_for_product>b{
-		float:right;
-	font-size: 14px;
+	float: right;
+	font-size: 17px;
 	margin-right: 10px;
 	margin-top: 15px;
-	padding-bottom: 0.8em;
+	padding-bottom: 0.4em;
 }
 .options>div.price_for_product{
 	padding:0 0 0.1em 0.1em;

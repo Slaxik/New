@@ -23,7 +23,7 @@ function FonHeader(){
 	}
 }
 function HoverDropMenu(){
-	if($(window).width()>992){
+	if($(window).width()>=992){
 	$('.bash_cabin').hover(function() {
 	$(this).addClass('test').removeClass('bash_cabin');
 	$('div.bash_drop_menu').fadeIn('fast');
@@ -408,5 +408,8 @@ $('#mobile_menu_left>ul>li').on('click', function(){
 	}, function() {
 		$('.buttons_lg_top>a.views>span.views_now').css('background-color', '#fff').css('color','#222e46');
 	});
+
+
  });
+
 
