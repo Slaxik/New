@@ -193,10 +193,9 @@ top:8px;
 right:30px;
 background: #fff;
 color: #222e46;
-width:13px;
-height:13px;
-padding: 0 4px;
+padding: 0 4px 1px 4px;
 font-size: 10px;
+text-align: center;
 -webkit-border-radius: 9px;
 -moz-border-radius: 9px;
 border-radius: 9px;
@@ -205,10 +204,6 @@ border-radius: 9px;
 	text-align: center;
 	font-size: 11px;
 	margin-top: 3px;
-}
-.buttons_lg_top>a.views:hover .buttons_lg_top>a.views>span.views_now{
-	background: #f06723;
-	color: #fff;
 }
 .buttons_lg_top>a.cart>img{
 	width:35px;
@@ -224,8 +219,9 @@ border-radius: 9px;
 	right:24px;
 	background: #fff;
 	color: #222e46;
-	padding: 0 4px;
+	padding: 0 4px 1px 5px;
 	font-size: 10px;
+	text-align: center;
 	-webkit-border-radius: 9px;
 	-moz-border-radius: 9px;
 	border-radius: 9px;
@@ -435,7 +431,7 @@ margin-right:9px;
 	width:100%;
 	cursor:pointer;
 	text-transform: uppercase;
-	padding: 0.5em 0 0.4em 0.5em;
+	padding: 0.5em 0 0.6em 0.5em;
 	text-align: center;
 	background-color: #222E46;
 }
@@ -446,8 +442,7 @@ margin-right:9px;
 #extended_filter>p{
 	color: #222E46;
 	text-transform: uppercase;
-	font-size: 1em;
-	margin:1em 0 0 0.5em;
+	margin:1.1em 0 0 0.6em;
 }
 #extended_filter>label{
 	color: #747A88;
@@ -459,23 +454,34 @@ margin-right:9px;
 	width:64px;
 	padding: 1px 0 2px 5px	;
 	height:22px;
-	  font-size: 12px;
+	color:#2d2d2f;
+	font-size: 12px;
+	background-color: #fff;
 	margin:0.7em 0 0 0.2em;
 	border:1px solid #BABABA;
+}
+#extended_filter>input:focus{
+    border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted 9;
+	-webkit-box-shadow: 0 0 5px rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.6);
+	box-shadow: 0 0 5px rgba(82, 168, 236, 0.6);
 }
 #extended_filter>div#name_rub{
 	position: relative;
 	bottom:21px;
 	left:83.5%;
+	color:#222E46;
 	font-size:0.8em;
 }
 /* Ширина слайдера */
 #slider {
 	cursor:pointer;
-	width:90%;
+	width:88%;
 	border: 0;
 	height:6px;
-	margin:0.3em 4%;
+	margin:0.3em auto;
 }
 /* Контейнер слайдера */
 .ui-slider {
@@ -536,7 +542,7 @@ margin-right:9px;
 	margin-bottom: 0;
 }
 #change_size>div.col-lg-12.col-md-12{
-	margin-bottom: 0.5em;
+	margin-bottom: 12px;
 }
 #change_size>div>p.width_height_depth{
 	margin: 0;
@@ -547,7 +553,8 @@ margin-right:9px;
 	margin-top:0.2em;
 }
 #change_size>div>img{
-	width:8%;
+	width:14px;
+	height:14px;
 	margin-bottom: 0.2em;
 }
 #change_size>div>label{
@@ -557,17 +564,33 @@ margin-right:9px;
 	margin-left: 0.2em;
 	font-weight: normal;
 }
+#change_size>div>label.to{
+	margin-left:10px;
+}
 #change_size>div>input{
 	display: inline-block;
-	width:35px;
-	padding: 2px 0 2px 5px;
+	width:34px;	
+	padding:0 5px;
+	font-size:12px;
 	height:22px;
 	border: 1px solid #bababa;
-background: #fff;
-color: #2d2d2f;
+	background: #fff;
+	color: #2d2d2f;
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
 }
-#change_size>div.size{
-	margin-top: 5px;
+#change_size>div>input:focus{
+ 	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted 9;
+	-webkit-box-shadow: 0 0 5px rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.6);
+	box-shadow: 0 0 5px rgba(82, 168, 236, 0.6);
+}
+#change_size>div.col-lg-12.col-md-12.size{
+	margin-bottom:12px;
 }
 .buttons_lg{
 	width:90%;
@@ -583,9 +606,13 @@ color: #2d2d2f;
 	padding:0.3em 0;
 	width: 100%;	
 	font-size:15px;
+	font-weight: normal;
 	text-transform: uppercase;
 	background-color:#152A45;
 	cursor: pointer;
+	overflow: visible;
+	border: none;
+	
 }
 .button:hover{
 	background-color: #FF5B06;
@@ -595,6 +622,7 @@ color: #2d2d2f;
 }
 .button>a{
 color:#fff;
+font-family: Tahoma, Verdana, sans-serif;
 }
 .grey{
 	background-color:#6C7584;
@@ -919,7 +947,14 @@ p.zvonok{
 /*End Center Block*/
 /*Menu Mobile*/
 #menu_for_mobile{
-	width:100%;
+	max-width: 750px;
+	margin:auto;
+	float:none;
+}
+#menu_for_mobile>div.row{
+
+}
+.menu_for_mobile_sm{
 	background-color: #131F31;
 }
 .menu_block{
@@ -1164,7 +1199,6 @@ float:left;
     background-color: #fff;
     text-align: center;
 }
-
 .for_bash_menu>div>ul{
 	color:#222E46;
 	margin-left: 2em;

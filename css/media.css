@@ -203,13 +203,12 @@ footer{
 	margin-left:70%;
 }
 .logo_lg{
-	margin-left: 5%;
-	width:49%;
+	width:57%;
 	float: left;
 }
 .phone_numbers{
-	width: 45%;
-	float: left;
+	width: 36%;
+	float: right;
 }
 .phone_numbers>span.phone{
 	font-size:30px;
@@ -265,7 +264,16 @@ height:99px;
 .count_bottom > p.page_number {
 	margin-left:70%;
 }
-
+#menu_for_mobile{
+	width:100%;
+}
+.phone_numbers{
+	width:50%;
+	padding-right: 0;
+}
+.logo_lg{
+	width:49%;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -550,8 +558,8 @@ width:730px;
 	}
 
 .options>div.buy{
-	 margin-top: 1.05em;
-    padding-top: 0.4em;
+	 margin-top: 1em;
+    padding-top: 0.45em;
 }
 }
 @media only screen and (max-width: 1040px) and (min-width:992px ){
