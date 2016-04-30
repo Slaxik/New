@@ -107,7 +107,7 @@ margin-top: -0.4em;
 	margin-left:0.5em;
 }
 .img_for_product{
-	height: 234px;
+	height: 247px;
 	padding: 0;
 }
 .nav_footer_menu{
@@ -327,10 +327,6 @@ body{
 .product_next{
 	margin-left:8px;
 }
-.fast_rewiew{
-	font-size:0.8em;
-	bottom:21em;
-}
 .logo_lg{
 	width:30%;
 	float: left;
@@ -390,6 +386,9 @@ width:105%;
 }
 #variable{
 	width:98.5%;
+}
+.img_for_product{
+	height: 255px;
 }
 }
 @media only screen and (max-width: 690px){
@@ -551,8 +550,8 @@ width:730px;
 	}
 
 .options>div.buy{
-	margin-top:1em;
-	padding-top: 0.45em;
+	 margin-top: 1.05em;
+    padding-top: 0.4em;
 }
 }
 @media only screen and (max-width: 1040px) and (min-width:992px ){
