@@ -148,6 +148,7 @@ var b = $('<a id="close" style="cursor:pointer;position:fixed;height:500px;right
 $('#catalog_menu').on('click', function(){
 $(a).appendTo('body').css('position','fixed').css('top','0px').css('right','100%').css('width','80%').css('margin', '0');
 $(a).children('.title_catalog_menu').children('p').css('text-align', 'center').css('font-size', '1.3em');
+$('#left_menu>ul>li>a').css('border-bottom', '1px solid #EDEDED;');
 	$(b).appendTo('body');	
 	$('#left_menu>ul>li').removeClass().css('display','block').css('background', '#fff');
 	$(a).animate({right: '20%',background: '#fff'},800);
