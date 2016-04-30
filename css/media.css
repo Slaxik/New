@@ -196,7 +196,6 @@ font-size:20px;
 	font-size:13px;
 	height: 30px;
 }
-
 footer{
 	padding:15px 0 0 0;
 	height:355px;
@@ -236,6 +235,25 @@ height:99px;
 #form_search>input.submit_input{
 	width:20%;
 	height: 100%;
+}
+.title_catalog_menu{
+		background:#6F7583;
+		padding: 0;
+}
+.title_catalog_menu>p{
+	text-align: center;
+		padding: 0.7em 0;
+		color:#fff;
+		width:100%;
+	    font: normal Tahoma, Geneva, Verdana, Arial, sans-serif;
+	    font-size:1.7em;
+		text-transform: uppercase;
+		background-color: #6F7583;
+		margin-bottom:0.3em;
+		height:100px;
+}
+#left_menu > ul{
+	padding: 0;
 }
 }
 /* Small Devices, Tablets */
@@ -330,6 +348,9 @@ height:99px;
 .options>div>b{
     font-size: 0.7em;
     padding-bottom: 0.2em;
+}
+#left_menu>ul>li.active>a{
+	border-bottom: none;
 }
 body{
 	background: #fff url(../img/header-border.png) 0 172px repeat-x;

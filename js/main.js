@@ -1,21 +1,21 @@
 $(document).ready(function(){
-initFilter();             //Скрыть/Показать расширенный фильтр
-LeftCatalog();			  //Выпадающее меню при наведении
-Search();				  //Поиск при клике на маленьких девайсах
-MobileCatalog();		  //Сдвиг влево(Показ мобильного каталога)
-MobileMenu();			  //Сдвиг влево(Показ мобильного меню)
-sliderValue();			  //Ползунок изменения цены
-ActiveTab();			  //Активный или не активный input
-BrandTab();				  //Перекдючение между странами и брендами
-HoverDropMenu();		  //Выпадающее меню при наведении
-Modal();                  //Инициализация модального окна
-ModalSms();				  //Модальное окно отправить сообщение
-ModalProduct();			  //Модальное окно продуктов
-ModalProductLine ();	  //Модальное окно продуктов
-FastView();               //Быстрый просмотр
-FonHeader();			  //Фон у шапки
-DropDownMenu();			  //Выпадающее меню на мобильных устройствах
-
+initFilter();             		//Скрыть/Показать расширенный фильтр
+LeftCatalog();			  		//Выпадающее меню при наведении
+Search();				  		//Поиск при клике на маленьких девайсах
+MobileCatalog();		  		//Сдвиг влево(Показ мобильного каталога)
+MobileMenu();			  		//Сдвиг влево(Показ мобильного меню)
+sliderValue();			  		//Ползунок изменения цены
+ActiveTab();			  		//Активный или не активный input
+BrandTab();				  		//Перекдючение между странами и брендами
+HoverDropMenu();		  		//Выпадающее меню при наведении
+Modal();                  		//Инициализация модального окна
+ModalSms();				  		//Модальное окно отправить сообщение
+ModalProduct();			  		//Модальное окно продуктов
+ModalProductLine ();	  		//Модальное окно продуктов
+FastView();               		//Быстрый просмотр
+FonHeader();			  		//Фон у шапки
+DropDownMenu();			  		//Выпадающее меню на мобильных устройствах
+AnimateScrollToTop();			//Плавная анимация при нажатии на кнопку НАВЕРХ
 //Изменение фона шапки
 function FonHeader(){
 	if($(window).width() < 992){
@@ -150,7 +150,7 @@ $(a).appendTo('body').css('position','fixed').css('top','0px').css('right','100%
 $(a).children('.title_catalog_menu').children('p').css('text-align', 'center').css('font-size', '1.3em');
 $('#left_menu>ul>li>a').css('border-bottom', '1px solid #EDEDED;');
 	$(b).appendTo('body');	
-	$('#left_menu>ul>li').removeClass().css('display','block').css('background', '#fff');
+	$('#left_menu>ul>li').css('display','block').css('background', '#fff');
 	$(a).animate({right: '20%',background: '#fff'},800);
 	$('body').css('position', 'relative').addClass('body_left');
 	$('body').animate({left: '80%'},800);
@@ -158,7 +158,6 @@ $('#left_menu>ul>li>a').css('border-bottom', '1px solid #EDEDED;');
 	$(a).css('display', 'block');
 	$('#left_menu>ul>li>a>img').attr({src: 'img/tab_menu.png'});
 	$(a).children('p').children('img').attr({src:'img/menu/catalog.png'});
-	$(a).children('ul').children('li').removeAttr('class');
 });
 	
 //Закрытие
@@ -181,6 +180,7 @@ $(Search).slideToggle('slow');
 
 /*Меню*/
 function LeftCatalog(){
+	if($(window).width()>=992){
 $('#left_menu>ul>li.active>a>img').attr({src: 'img/active_tab_menu.png'});
 $('#left_menu>ul>li.active>a').css('border-bottom', 'none');
 $('#left_menu').hover(function() {
@@ -196,6 +196,7 @@ $('#left_menu').hover(function() {
 		$('#left_menu>ul>li.not_active').slideUp('600');
 		$('#left_menu>ul>li.active>a>img').attr({src: 'img/active_tab_menu.png'});
 });
+}
 }
 //Скрытие/Показ Разширенного фильтра
 function initFilter(){
@@ -399,6 +400,7 @@ $('#mobile_menu_left>ul>li').on('click', function(){
 	}
 });
 }
+
 	$('a.cart').hover(function() {
 		$('.buttons_lg_top>a.cart>span.count_cart_now').css('background-color', '#f06723').css('color','#fff');
 	}, function() {
@@ -410,7 +412,9 @@ $('#mobile_menu_left>ul>li').on('click', function(){
 		$('.buttons_lg_top>a.views>span.views_now').css('background-color', '#fff').css('color','#222e46');
 	});
 
-
+function AnimateScrollToTop(){
+		$('.to_top>a').click(function() {
+			$('body,html').animate({scrollTop:0},1000);
+		});
+}
  });
-
-

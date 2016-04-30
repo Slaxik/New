@@ -286,7 +286,6 @@ display:none;
 	display: block;
 }
 #left_menu>ul>li.active>a{
-	border-bottom: none;
 	font-size: 16px;
 	color:#f06723;
 }
@@ -964,9 +963,10 @@ p.zvonok{
 	color: #152A45;
 	position: absolute;
 	text-align: center;
-	width: 22px;
-	right:26.5%;
+	width: 23px;
+	right:24.5%;
 	top:5px;
+	padding-left: 0.1em;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -979,8 +979,9 @@ p.zvonok{
 	position: absolute;
 	text-align: center;
 	padding: 0 0.3em;
-	width: 22px;
+	width: 18px;
 	left:51%;
+	padding-left: 0.35em;
 	top:5px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -1001,7 +1002,11 @@ padding: 0.7em 0;
 	color:#fff;
 	font-size:1em;
 }
-
+#menu_for_mobile>div>div>a>img.img_cart{
+	width:68px;
+	height:50px;
+	margin-top:-5px;
+}
 /*End Menu Mobile*/
 /*Mobile Variables*/
 #mobile_variables{
@@ -2263,4 +2268,21 @@ margin-right: 0.7em;
 	width:16px;
 	height:16px;
 	margin-right:5%;
+}
+.bash_m_menu{
+	width:100%;
+	display:none;
+	list-style: none;
+}
+.bash_m_menu>li{
+width:100%;
+	margin-top: 0.1em;
+}
+.bash_m_menu>li>a{
+	display: block;
+	color: #6f7583;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 5px 0 5px 40px;
+	position: relative;
 }
