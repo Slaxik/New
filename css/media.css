@@ -280,6 +280,9 @@ height:99px;
 	width:50%;
 	padding-right: 0;
 }
+.phone_numbers>span.phone{
+	float:right;
+}
 .logo_lg{
 	width:49%;
 }
