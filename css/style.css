@@ -811,7 +811,7 @@ background-position: 50% 45%;
 .product{
 	cursor: pointer;
 	position: relative;
-	border:1px solid #EDEDED;
+	border:1px solid #E7E7E7;
 	margin-bottom: 20px;
 	padding: 0;
 }
@@ -1982,6 +1982,7 @@ color: #ea6226;
 .line_product{
 	margin-top:2em;
 	border:1px solid #DDD;
+	width: 96%;	
 }
 .title_for_product{
 	line-height: 17px;
@@ -2082,7 +2083,7 @@ margin-bottom: 1em;
 .count_bottom>p.page_number{
 	color: #222E46;
 	float:left;
-	margin-left:27em;
+	margin-left:25.5em;
 }
 .count_bottom>a{
 	color: #222E46;
